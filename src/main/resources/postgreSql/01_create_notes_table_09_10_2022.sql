@@ -7,3 +7,5 @@ CREATE TABLE notes (
 	updated_at timestamp NULL,
 	CONSTRAINT notes_pkey PRIMARY KEY (note_id)
 );
+
+CREATE INDEX notes_user_id_idx ON public.notes (user_id);
